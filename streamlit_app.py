@@ -8,8 +8,8 @@ st.dataframe(df)
 fig1=alt.Chart(df).mark_line().encode(x='turno',y='Capitale a disposizione')
 
 fig2=alt.Chart(df).mark_line().encode(
-  x='turno',
-  y=['Materiale disponibile da circolarità','Investimenti in processi circolari']
+  alt.Column('Vendite'), alt.X('Turno'),
+    alt.Y('Esternalità negative totali', axis=alt.Axis(grid=False))
 )
 
 
