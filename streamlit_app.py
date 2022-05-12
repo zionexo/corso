@@ -1,8 +1,13 @@
 
 import streamlit as st
+import pandas as pd
+
+df=pd.read_excel('dati.xlsx',sheet_name='data',index_col=0)
+
 
 st.title('Mobile Production Dashboard')
 
+st.line_chart(data=df['Capitale a disposizione'])
 
 
 
