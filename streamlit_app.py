@@ -5,14 +5,14 @@ import altair as alt
 
 df=pd.read_csv('dati.csv')
 st.dataframe(df.columns)
-fig1=alt.Chart(df).mark_line().encode(x=alt.X('turno:O',labelAngle=90),
+fig1=alt.Chart(df).mark_line().encode(x=alt.X('turno:O',label=alt.Lablel(labelAngle=90)),
                                       y=alt.Y('Capitale a disposizione'),
                                      
                                      )
 
 fig2=alt.Chart(df).mark_line().encode(
   alt.Column('Vendite'), alt.X('turno'),
-    alt.Y('Esternalità negative totali prodotte dall\'azienda', axis=alt.Axis(grid=False))
+    alt.Y("Esternalità negative totali prodotte dall\'azienda", axis=alt.Axis(grid=False))
 )
 
 
