@@ -8,7 +8,7 @@ df=pd.read_csv('dati.csv',index_col=0)
 st.title('Mobile Production Dashboard')
 
 st.line_chart(data=df['Capitale a disposizione'])
-
+st.bar_chart(data=df['Capitale a disposizione'])
 
 
 
