@@ -9,7 +9,7 @@ fig1=alt.Chart(df).mark_line().encode(x='turno',y='Capitale a disposizione')
 
 fig2=alt.Chart(df).mark_line().encode(
   alt.Column('Vendite'), alt.X('turno'),
-    alt.Y("Esternalità negative totali prodotte dall'azienda", axis=alt.Axis(grid=False))
+    alt.Y('Esternalità negative totali prodotte dall\'azienda', axis=alt.Axis(grid=False))
 )
 
 
