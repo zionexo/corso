@@ -1,6 +1,7 @@
 
 import streamlit as st
 import pandas as pd
+import matplotlib.pyplot as plt
 
 df=pd.read_csv('dati.csv',index_col=0)
 
@@ -9,6 +10,7 @@ st.title('Azienda 1 Dashboard')
 
 st.bar_chart(data=df['Capitale a disposizione'])
 st.bar_chart(data=df[['Materiale disponibile da circolarità','Investimenti in processi circolari']])
+
 
 x=df["Esternalità negative totali prodotte dall'azienda"].index
 y=df["Esternalità negative totali prodotte dall'azienda"].cumsum().values
