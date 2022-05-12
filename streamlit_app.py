@@ -4,7 +4,7 @@ import pandas as pd
 import altair as alt
 
 df=pd.read_csv('dati.csv')
-st.dataframe(df)
+st.dataframe(df.columns)
 fig1=alt.Chart(df).mark_line().encode(x='turno',y='Capitale a disposizione')
 
 fig2=alt.Chart(df).mark_line().encode(
