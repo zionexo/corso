@@ -7,7 +7,7 @@ df=pd.read_csv('dati.csv',index_col=0)
 
 st.title('Azienda 1 Dashboard')
 
-col1, col2, col3 = st.columns(3)
+col1, col2 = st.columns(2)
 
 with col1:
   st.bar_chart(data=df['Capitale a disposizione'])
@@ -19,9 +19,6 @@ with col2:
   st.bar_chart(data=df['Importo finale / Importo iniziale'])
   st.bar_chart(data=df['Obiettivi raggiunti'])
 
-with col3:
-  st.header("An owl")
-  st.image("https://static.streamlit.io/examples/owl.jpg")
     
 
 
