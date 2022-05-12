@@ -3,9 +3,9 @@ import streamlit as st
 import pandas as pd
 import altair as alt
 
-df=pd.read_csv('dati.csv',index_col=0)
+df=pd.read_csv('dati.csv')
 
-fig=alt.Chart(df['Capitale a disposizione']).mark_bar()
+fig=alt.Chart(df).mark_bar().encoded(x='Turno',y='Capitale a disposizione')
 st.altair_chart(fig, use_container_width=True)
 col1, col2 = st.columns([3,2])
 
