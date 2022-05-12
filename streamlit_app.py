@@ -5,9 +5,9 @@ import altair as alt
 
 df=pd.read_csv('dati.csv')
 st.dataframe(df.columns)
-fig1=alt.Chart(df).mark_line().encode(x='turno:O',
+fig1=alt.Chart(df).mark_line().encode(x=alt.X('turno:O',labelAngle=90),
                                       y=alt.Y('Capitale a disposizione'),
-                                     column=alt.Column(header=alt.Header(labelAngle=90))
+                                     
                                      )
 
 fig2=alt.Chart(df).mark_line().encode(
