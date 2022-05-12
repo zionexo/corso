@@ -5,7 +5,7 @@ import altair as alt
 
 df=pd.read_csv('dati.csv')
 st.dataframe(df)
-fig=alt.Chart(df).mark_bar().encode(x='Turno',y='Capitale a disposizione')
+fig=alt.Chart(df).mark_bar().encode(x='turno',y='Capitale a disposizione')
 st.altair_chart(fig, use_container_width=True)
 col1, col2 = st.columns([3,2])
 
