@@ -19,7 +19,8 @@ col1, col2 = st.columns(2)
 with col1:
   st.title('Azienda 1 Dashboard')
   st.altair_chart(fig1, use_container_width=True)
-  st.bar_chart(data=df[['Materiale disponibile da circolarità','Investimenti in processi circolari']])
+  st.altair_chart(fig2, use_container_width=True)
+  
 
 with col2:
   st.title('KPI')
