@@ -9,7 +9,7 @@ fig1=alt.Chart(df).mark_line().encode(x='turno',y='Capitale a disposizione')
 
 
 
-col1, col2 = st.columns([3,2])
+col1, col2 = st.columns(2)
 
 with col1:
   st.title('Azienda 1 Dashboard')
