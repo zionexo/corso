@@ -44,13 +44,13 @@ conf_rsi=conf_turno.encode(y='RSI_/_importo finale')
 
 col1, col2 = st.columns(2)
 
-with col1:
+with st.container():
   st.title('Azienda 1 Dashboard')
   st.altair_chart(chart1, use_container_width=True)
   st.altair_chart(chart0, use_container_width=True)
   
 
-with col2:
+with st.container():
   st.title('KPI')
   st.altair_chart(conf_impo, use_container_width=True)
   st.altair_chart(conf_bran, use_container_width=True)
