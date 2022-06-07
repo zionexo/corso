@@ -44,7 +44,8 @@ conf_rsi=conf_turno.encode(y='RSI_/_importo finale')
 st.title('Cruscotto Business Game')
 
 with st.container():
-  st.title('Azienda 1  \n Dashboard')
+  st.title('Azienda 1')
+  st.title('Dashboard KPI Aziendali')
   st.altair_chart(chart1, use_container_width=True)
   st.altair_chart(chart0, use_container_width=True)
   
