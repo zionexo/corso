@@ -37,7 +37,7 @@ conf_impo=conf_turno.encode(y=alt.Y('Importo finale_/_Importo iniziale',title='I
 conf_bran=conf_turno.encode(y='Brand reputation')
 conf_obiet=conf_turno.encode(y='Obiettivi raggiunti')
 
-conf_est=conf_turno.encode(y='Est_Neg_/_Vendite totali')
+conf_est=conf_turno.encode(y=alt.Y('Est_Neg_/_Vendite totali', title='Est.Neg./Vendite totali'))
 
 conf_rsi=conf_turno.encode(y='RSI_/_importo finale')
 
@@ -55,15 +55,3 @@ with st.container():
   st.altair_chart(conf_impo, use_container_width=True)
   st.altair_chart(conf_bran, use_container_width=True)
   st.altair_chart(conf_est, use_container_width=True)
-
-    
-
-
-
-
-
-
-
-
-
-
