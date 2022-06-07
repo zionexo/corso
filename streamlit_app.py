@@ -41,11 +41,10 @@ conf_est=conf_turno.encode(y=alt.Y('Est_Neg_/_Vendite totali', title='Est.Neg./V
 
 conf_rsi=conf_turno.encode(y='RSI_/_importo finale')
 
-
-col1, col2 = st.columns(2)
+st.title('Cruscotto Business Game')
 
 with st.container():
-  st.title('Azienda 1 Dashboard')
+  st.title('Azienda 1  \n Dashboard')
   st.altair_chart(chart1, use_container_width=True)
   st.altair_chart(chart0, use_container_width=True)
   
