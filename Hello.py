@@ -5,14 +5,15 @@ st.set_page_config(
     page_icon="👋",
 )
 
-st.write("# Benvenuto nel sito del CDA della Azienda 1 👋")
+st.write("""## Benvenuto nel sito del CDA 
+         # dell'Azienda 1 👋""")
 
 st.sidebar.success("Select a page above.")
 
 st.markdown(
     """
     Questo sito raccoglie i dati dei vari cruscotti del business game per il
-    # Master Strategia e Gestione della Sostenibilità Aziendale della 24Ore Business School
+    ## Master Strategia e Gestione della Sostenibilità Aziendale della 24Ore Business School
     
     (Usa la barra a sinistra per navigare nel contenuto)\n
     (se la barra non è visibile attivala cliccando su ">" in alto a sinistra)
