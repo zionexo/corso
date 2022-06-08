@@ -39,7 +39,7 @@ st.set_page_config(page_title="Plotting Demo", page_icon="📈")
 st.title('Master Strategia e Gestione della Sostenibilità Aziendale')
 st.header('Cruscotto Business Game')
 
-st.sidebar.success("Select a demo above.")
+st.sidebar.success("Select a page above.")
 
 with st.container():
   st.header('Azienda 1')
