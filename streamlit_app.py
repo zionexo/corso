@@ -17,7 +17,7 @@ data=pd.read_csv('dati.csv')
 
 data['capitale totale']=data['Capitale a disposizione']+data['Disponibilità di magazzino']*3
 
-turno=alt.Chart(data).mark_line().encode(x='turno:O')
+turno=alt.Chart(data).mark_line().encode(x='turno')
 capitale=turno.encode(y=alt.Y('Capitale a disposizione', axis=alt.Axis(title='Capitale',titleColor='blue')))
 magazzino=turno.encode(y=alt.Y('Disponibilità di magazzino', axis=alt.Axis(title='Capitale Magazzino',titleColor='green')))
 tot=turno.encode(y='capitale totale')
