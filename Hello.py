@@ -5,8 +5,8 @@ st.set_page_config(
     page_icon="👋",
 )
 
-st.write("""## Benvenuto nel sito del CDA 
-         # dell'Azienda 1 👋""")
+st.write("""## Benvenuto nel sito del CDA dell'Azienda 1 👋
+         """)
 
 st.sidebar.success("Select a page above.")
 
