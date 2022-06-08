@@ -4,13 +4,13 @@ import pandas as pd
 import altair as alt
 
 
-df=pd.read_excel('corso/dati.xlsx',sheet_name='data')
+df=pd.read_excel('/corso/dati.xlsx',sheet_name='data')
 
 df=df.drop(df[df['Capitale a disposizione']==' '].index)
 
-df.to_csv('corso/dati.csv',index=False)
+df.to_csv('/corso/dati.csv',index=False)
 ##########################################
-data=pd.read_csv('../dati.csv')
+data=pd.read_csv('/corso/dati.csv')
 
 data['capitale totale']=data['Capitale a disposizione']+data['Disponibilità di magazzino']*3
 
