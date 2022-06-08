@@ -4,15 +4,13 @@ import pandas as pd
 import altair as alt
 
 
-df=pd.read_excel('dati.xlsx',sheet_name='data')
+df=pd.read_excel('../dati.xlsx',sheet_name='data')
 
 df=df.drop(df[df['Capitale a disposizione']==' '].index)
 
-df.to_csv('dati.csv',index=False)
-
-conf=pd.read_excel('dati.xlsx',sheet_name='conf',header=1)
+df.to_csv('../dati.csv',index=False)
 ##########################################
-data=pd.read_csv('dati.csv')
+data=pd.read_csv('../dati.csv')
 
 data['capitale totale']=data['Capitale a disposizione']+data['Disponibilità di magazzino']*3
 
@@ -31,3 +29,16 @@ chart=alt.layer(
 )
 
 chart0=chart.configure(background='transparent')
+
+
+
+st.title('Master Strategia e Gestione della Sostenibilità Aziendale')
+st.header('Cruscotto Business Game')
+
+st.sidebar.success("Select a demo above.")
+
+with st.container():
+  st.header('Azienda 1')
+  st.subheader('Dashboard KPI Aziendali')
+  st.altair_chart(chart1, use_container_width=True)
+  st.altair_chart(chart0, use_container_width=True)
