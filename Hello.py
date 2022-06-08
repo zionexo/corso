@@ -13,5 +13,8 @@ st.markdown(
     """
     Questo sito raccoglie i dati dei vari cruscotti del business game per il 
     Master Strategia e Gestione della Sostenibilità Aziendale della 24Ore Business School
+    
+    (Usa la barra a sinistra per navigare nel contenuto)
+    (se la barra non è visibile attivala cliccando su ">" in alto a sinistra)
 """
 )
