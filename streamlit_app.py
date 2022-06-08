@@ -1,4 +1,10 @@
 
+
+import streamlit as st
+import pandas as pd
+import altair as alt
+
+
 df=pd.read_excel('dati.xlsx',sheet_name='data')
 
 df=df.drop(df[df['Capitale a disposizione']==' '].index)
@@ -6,12 +12,7 @@ df=df.drop(df[df['Capitale a disposizione']==' '].index)
 df.to_csv('dati.csv',index=False)
 
 conf=pd.read_excel('dati.xlsx',sheet_name='conf',header=1)
-
-import streamlit as st
-import pandas as pd
-import altair as alt
-
-
+##########################################
 data=pd.read_csv('dati.csv')
 
 data['capitale totale']=data['Capitale a disposizione']+data['Disponibilità di magazzino']*3
