@@ -58,8 +58,8 @@ st.title('Master Strategia e Gestione della Sostenibilità Aziendale')
 st.header('Cruscotto Business Game')
 
 with st.container():
-  st.subheader('Azienda 1')
-  st.title('Dashboard KPI Aziendali')
+  st.header('Azienda 1')
+  st.subheader('Dashboard KPI Aziendali')
   st.altair_chart(chart1, use_container_width=True)
   st.altair_chart(chart0, use_container_width=True)
   
