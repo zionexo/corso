@@ -1,4 +1,12 @@
 
+df=pd.read_excel('dati.xlsx',sheet_name='data')
+
+df=df.drop(df[df['Capitale a disposizione']==' '].index)
+
+df.to_csv('dati.csv',index=False)
+
+conf=pd.read_excel('dati.xlsx',sheet_name='conf',header=1)
+
 import streamlit as st
 import pandas as pd
 import altair as alt
