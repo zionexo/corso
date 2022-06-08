@@ -30,6 +30,10 @@ chart=alt.layer(
 
 chart0=chart.configure(background='transparent')
 
+importo=turno.encode(y='Importo finale / Importo iniziale')
+brand=turno.encode(y='Brand reputation')
+obiettivi=turno.encode(y='Obiettivi raggiunti')
+
 st.set_page_config(page_title="Plotting Demo", page_icon="📈")
 
 st.title('Master Strategia e Gestione della Sostenibilità Aziendale')
@@ -41,7 +45,9 @@ with st.container():
   st.header('Azienda 1')
   st.subheader('Dashboard KPI Aziendali')
   st.altair_chart(chart1, use_container_width=True)
-  st.altair_chart(chart0, use_container_width=True)
+  st.altair_chart(importo, use_container_width=True)
+  st.altair_chart(brand, use_container_width=True)
+  st.altair_chart(obiettivi, use_container_width=True)
 
     
 st.button("Re-run")
