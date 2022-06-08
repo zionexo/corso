@@ -34,7 +34,7 @@ importo=turno.encode(y='Importo finale / Importo iniziale')
 brand=turno.encode(y='Brand reputation')
 obiettivi=turno.encode(y='Obiettivi raggiunti')
 
-st.set_page_config(page_title="Plotting Demo", page_icon="📈")
+st.set_page_config(page_title="Azienda 1 performances", page_icon="📈")
 
 st.title('Master Strategia e Gestione della Sostenibilità Aziendale')
 st.header('Cruscotto Business Game')
