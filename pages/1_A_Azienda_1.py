@@ -30,7 +30,7 @@ chart=alt.layer(
 
 chart0=chart.configure(background='transparent')
 
-
+st.set_page_config(page_title="Plotting Demo", page_icon="📈")
 
 st.title('Master Strategia e Gestione della Sostenibilità Aziendale')
 st.header('Cruscotto Business Game')
@@ -42,3 +42,6 @@ with st.container():
   st.subheader('Dashboard KPI Aziendali')
   st.altair_chart(chart1, use_container_width=True)
   st.altair_chart(chart0, use_container_width=True)
+
+    
+st.button("Re-run")
