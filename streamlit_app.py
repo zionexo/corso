@@ -54,6 +54,7 @@ conf_est=conf_turno.encode(y=alt.Y('Est_Neg_/_Vendite totali', title='Est.Neg./V
 
 conf_rsi=conf_turno.encode(y='RSI_/_importo finale')
 
+st.title('Master Strategia e Gestione della Sostenibilità Aziendale')
 st.title('Cruscotto Business Game')
 
 with st.container():
