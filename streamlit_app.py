@@ -55,17 +55,17 @@ conf_est=conf_turno.encode(y=alt.Y('Est_Neg_/_Vendite totali', title='Est.Neg./V
 conf_rsi=conf_turno.encode(y='RSI_/_importo finale')
 
 st.title('Master Strategia e Gestione della Sostenibilità Aziendale')
-st.title('Cruscotto Business Game')
+st.header('Cruscotto Business Game')
 
 with st.container():
-  st.title('Azienda 1')
+  st.subheader('Azienda 1')
   st.title('Dashboard KPI Aziendali')
   st.altair_chart(chart1, use_container_width=True)
   st.altair_chart(chart0, use_container_width=True)
   
 
 with st.container():
-  st.title('KPI Confronto con altre aziende')
+  st.subheader('KPI Confronto con altre aziende')
   st.altair_chart(conf_impo, use_container_width=True)
   st.altair_chart(conf_bran, use_container_width=True)
   st.altair_chart(conf_est, use_container_width=True)
