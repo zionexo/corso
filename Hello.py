@@ -5,7 +5,7 @@ st.set_page_config(
     page_icon="👋",
 )
 
-st.write("# Welcome to Streamlit! 👋")
+st.write("# Benvenuto nel sito del CDA della Azienda 1 👋")
 
 st.sidebar.success("Select a page above.")
 
