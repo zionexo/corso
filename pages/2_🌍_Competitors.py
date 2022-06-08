@@ -21,7 +21,7 @@ conf_est=conf_turno.encode(y=alt.Y('Est_Neg_/_Vendite totali', title='Est.Neg./V
 
 conf_rsi=conf_turno.encode(y='RSI_/_importo finale')
 
-
+st.sidebar.success("Select a page above.")
 st.set_page_config(page_title="Competitors", page_icon="🌍")
 
 st.title('Master Strategia e Gestione della Sostenibilità Aziendale')
