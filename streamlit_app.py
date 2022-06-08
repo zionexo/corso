@@ -57,6 +57,8 @@ conf_rsi=conf_turno.encode(y='RSI_/_importo finale')
 st.title('Master Strategia e Gestione della Sostenibilità Aziendale')
 st.header('Cruscotto Business Game')
 
+st.sidebar.success("Select a demo above.")
+
 with st.container():
   st.header('Azienda 1')
   st.subheader('Dashboard KPI Aziendali')
