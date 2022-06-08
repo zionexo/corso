@@ -44,7 +44,7 @@ st.sidebar.success("Select a demo above.")
 with st.container():
   st.header('Azienda 1')
   st.subheader('Dashboard KPI Aziendali')
-  st.altair_chart(chart1, use_container_width=True)
+  st.altair_chart(chart0, use_container_width=True)
   st.altair_chart(importo, use_container_width=True)
   st.altair_chart(brand, use_container_width=True)
   st.altair_chart(obiettivi, use_container_width=True)
