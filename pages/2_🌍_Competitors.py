@@ -40,6 +40,8 @@ with st.container():
   st.altair_chart(conf_impo, use_container_width=True)
   st.altair_chart(conf_bran, use_container_width=True)
   st.altair_chart(conf_est, use_container_width=True)
+  st.altair_chart(score, use_container_width=True)
+
 
   st.button("Update")
   
