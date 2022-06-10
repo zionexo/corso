@@ -12,7 +12,7 @@ conf=pd.read_excel('dati.xlsx',sheet_name='conf',header=1)
 conf['Est_Neg_/_Vendite totali']=conf['Est_Neg_/_Vendite totali']*100
 conf['RSI_/_importo finale']=conf['RSI_/_importo finale']*100
 
-conf_turno=alt.Chart(conf).mark_line(point=True).encode(x=x=alt.X('turno',axis=alt.Axis(tickMinStep=1)),color='Indicatori aziendali')
+conf_turno=alt.Chart(conf).mark_line(point=True).encode(x=alt.X('turno',axis=alt.Axis(tickMinStep=1)),color='Indicatori aziendali')
 conf_impo=conf_turno.encode(y=alt.Y('Importo finale_/_Importo iniziale',title='Importo finale / Importo iniziale'))
 conf_bran=conf_turno.encode(y='Brand reputation')
 conf_obiet=conf_turno.encode(y='Obiettivi raggiunti')
