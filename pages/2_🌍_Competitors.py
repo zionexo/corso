@@ -26,7 +26,7 @@ for k in range(1,conf.turno.max()+1,1):
     ind=conf[conf.turno==k].index
     conf.loc[ind,'pos']=(15/conf.loc[ind,ranking].rank(method='max',na_option='bottom').sum(axis=1)).rank(method='max')
 
-score=conf_turno.encode(y=alt.Y('pos',scale=alt.Scale(reverse=True , domain=[1,5])))
+score=conf_turno.encode(y=alt.Y('pos',scale=alt.Scale(reverse=True , domain=[1,5],axis=alt.Axis(tickMinStep=1))))
 
 
 st.set_page_config(page_title="Competitors", page_icon="🌍")
