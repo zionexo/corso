@@ -8,7 +8,7 @@ import altair as alt
 conf=pd.read_excel('dati.xlsx',sheet_name='conf',header=1)
 ##########################################
 
-conf=pd.read_csv('conf.csv')
+#conf=pd.read_csv('conf.csv')
 conf['Est_Neg_/_Vendite totali']=conf['Est_Neg_/_Vendite totali']*100
 conf['RSI_/_importo finale']=conf['RSI_/_importo finale']*100
 
