@@ -50,4 +50,4 @@ with st.container():
   st.altair_chart(obiettivi, use_container_width=True)
 
     
-st.button("Re-run")
+st.button("Update")
